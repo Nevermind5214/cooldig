@@ -1,7 +1,7 @@
 local path = "/"..fs.getDir( shell.getRunningProgram() )
 local tArgs = { ... }
 if #tArgs ~= 1 then
-	print( "Usage: cooldig <gridsize>" )
+	print( "Usage: cooldig.lua <gridsize>" )
 	return
 end
 
@@ -15,4 +15,4 @@ end
 term.clear()
 term.setCursorPos( 1,1 )
 print( "version 1.0.1" )
-shell.run( path.."cooldata/main "..size )
+shell.run( path.."cooldata/main.lua "..size )
